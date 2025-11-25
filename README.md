@@ -81,7 +81,7 @@ The system captures **15+ essential data points**:
 ## ⚙️ How to Run
 ```bash
 # Clone the Repository
-https://github.com/udayraj-rgb/IDMatrix-National-ID-Registry-System-24BCE11159.git
+https://github.com/NIKHIL67ydv/IDMatrix
 
 # Compile
 javac *.java
