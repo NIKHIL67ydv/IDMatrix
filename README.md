@@ -1,15 +1,15 @@
-# CivisID: National ID Registry System
+# IDMatrix: National ID Registry System
 
-**CivisID** is a Java-based Command Line Interface (CLI) application designed to simulate the backend workflows of a real-world national citizen registration and verification system. Built with a focus on accuracy, scalability, security, data integrity, and persistent storage, it goes far beyond traditional console-based programs.
+**IDMatrix** is a Java-based Command Line Interface (CLI) application designed to simulate the backend workflows of a real-world national citizen registration and verification system. Built with a focus on accuracy, scalability, security, data integrity, and persistent storage, it goes far beyond traditional console-based programs.
 
 ##  Project Overview
 
-While basic Java applications lose data upon exit, **CivisID ensures permanent storage** using CSV-based data files, making all records easily exportable, readable, and compatible with tools like Excel, Google Sheets, and government data platforms.
+While basic Java applications lose data upon exit, **IDMatrix ensures permanent storage** using CSV-based data files, making all records easily exportable, readable, and compatible with tools like Excel, Google Sheets, and government data platforms.
 
 ### Core Objectives
-CivisID is designed to help the government maintain a centralized citizen database, enabling authorities to know essential details about each citizen—such as identity, age, address, phone number, and email—ensuring consistent and accurate record-keeping across departments.
+IDMatrix is designed to help the government maintain a centralized citizen database, enabling authorities to know essential details about each citizen—such as identity, age, address, phone number, and email—ensuring consistent and accurate record-keeping across departments.
 
-Each citizen is assigned a unique **CivisID Number**, which is used to:
+Each citizen is assigned a unique **IDMatrix Number**, which is used to:
 * Verify the authenticity of the user.
 * Prevent duplicate registrations.
 * Ensure secure access and identity validation.
@@ -21,7 +21,7 @@ The application collects **Email IDs** and **Phone Numbers**, enabling the syste
 * Send important notifications, emergency alerts, and reminders.
 * Maintain direct communication between public departments and citizens.
 
-Overall, CivisID replicates the fundamental features of national ID systems (similar to Aadhaar, SSN, etc.) by providing secure registration, validation, monitoring, and data persistence—all from a lightweight and efficient Java CLI environment.
+Overall, IDMatrix replicates the fundamental features of national ID systems (similar to Aadhaar, SSN, etc.) by providing secure registration, validation, monitoring, and data persistence—all from a lightweight and efficient Java CLI environment.
 
 ---
 
@@ -40,7 +40,7 @@ The system intelligently adapts the registration flow based on **Gender** and **
 Each citizen receives a **non-sequential, unpredictable 7-digit ID**. This increases anonymity and prevents ID guessing attacks.
 
 ###  3. Permanent CSV Data Storage
-CivisID uses `citizens.csv` to store data persistently.
+IDMatrix uses `citizens.csv` to store data persistently.
 * Auto-creates CSV with headers if missing.
 *  Appends new data safely.
 *  Readable in Excel/Google Sheets.
@@ -81,7 +81,7 @@ The system captures **15+ essential data points**:
 ## ⚙️ How to Run
 ```bash
 # Clone the Repository
-https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159.git
+https://github.com/udayraj-rgb/IDMatrix-National-ID-Registry-System-24BCE11159.git
 
 # Compile
 javac *.java
@@ -93,7 +93,6 @@ java NationalIDApp
 ## Sample CSV Output
 | NationalID | Name | Age | DOB | Gender | MaritalStatus | Relation | Phone | Email | Address | Pincode | State |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2145852 | Udayraj Patil | 20 | 25-03-2005 | Male | Unmarried | Father: Suresh Patil | 9999117777 | uday@education.com | Bandra West Mumbai | 34567 | Maharashtra |
 | 5903076 | Rahul Deshmukh | 23 | 20-02-2003 | Male | Unmarried | Father: Shrikant Deshmukh | 7777788999 | rahul@compnay.com | Sahibaug Ahmedabad | 382461 | Gujarat |
 | 5552702 | Neha Gupta | 34 | 16-01-1991 | Female | Married | Husband: Ravi Gupta | 888777902 | neha@gmail.com | Sector-25 Gurugram | 122221 | Haryana |
 | 1186232 | Ashutosh Dubey | 43 | 07-07-1982 | Male | Married | Wife: Sneha Dubey | 7777788891 | ashutosh@exmaple.com | Gandhinagar Lucknow | 2234567 | Uttar Pradesh |
@@ -101,11 +100,7 @@ java NationalIDApp
 | 9857396 | Shubham Gaikwad | 41 | 23-06-1983 | Male | Married | Wife: Priya Gaikwad | 77896542367 | Shubham123@emali.com | Sarafa Bazar Indore | 3456789 | Madhya Pradesh |
 
 ## Screenshots
-* ![image alt](https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159/blob/85caf7a4c55be18334df9256e3d2a913006a830a/Screenshots/Screenshot%202025-11-24%20163016.png)
-* ![image alt](https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159/blob/c3a93522b17df42dfeeabab30e737bdb6c4a5395/Screenshots/Screenshot%202025-11-24%20163047.png)
-* ![image alt](https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159/blob/c3a93522b17df42dfeeabab30e737bdb6c4a5395/Screenshots/Screenshot%202025-11-24%20163140.png)
-* ![image alt](https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159/blob/c3a93522b17df42dfeeabab30e737bdb6c4a5395/Screenshots/Screenshot%202025-11-24%20163629.png)
-* ![image alt](https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159/blob/c3a93522b17df42dfeeabab30e737bdb6c4a5395/Screenshots/Screenshot%202025-11-24%20164224.png)
+
 ##  Future Enhancements
 * GUI: JavaFX/Swing interface for a modern desktop experience.
 * Database: Integration with MySQL/PostgreSQL via JDBC for large-scale usage.
